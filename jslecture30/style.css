@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.card h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: rgb(106, 192, 156);
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border: 0.3px solid #b5b2b2;
+    border: 2.5px solid rgb(106, 192, 156);
+    border-radius: 50px;
+    outline: none;
+}
+
+.input-group button {
+    padding: 12px;
+    font-size: 16px;
+    background: #4e73df;
+    color: #fff;
+    border: 2px solid rgb(221, 216, 216);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.input-group button:hover{
+    background-color: #55cfa6;
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 17px;
+    padding: 13.5px;
+    background: #ffffff;
+    border: 2.5px solid rgb(67, 177, 131);
+    border-radius: 50px;
+    min-height: 44px;
+    font-size: 14.5px;
+    /* color: rgb(217, 117, 18); */
+    color:  rgb(67, 177, 131);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    .card h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .input-group input,
+    .input-group button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
